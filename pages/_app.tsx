@@ -1,12 +1,13 @@
 import '../styles/globals.css'
-import {ChakraProvider} from '@chakra-ui/react'
 import {AppProps} from "next/app";
+import {ChakraMDXProvider} from '@mdx-lib/chakra';
+
 
 function MyApp({Component, pageProps}: AppProps) {
     return (
-        <ChakraProvider>
+        <ChakraMDXProvider>
             <Component {...pageProps} />
-        </ChakraProvider>
+        </ChakraMDXProvider>
     )
 }
 
