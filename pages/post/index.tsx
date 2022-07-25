@@ -9,13 +9,10 @@ const PostIndex: NextPage = () => {
             <List spacing={8}>
                 <ListItem>
                     <Heading as="h2" size="md">
-                        <Link href="/post/hello-world" name="Create Polymorphic Inheritance in SQLAlchemy"/>
+                        <Link href="/post/rata-rata-inflasi-indonesia" name="Berapa rata-rata inflasi di Indonesia?"/>
                     </Heading>
-                    <Text fontSize="sm" mb={5}>
-                        18 April 2022
-                    </Text>
                     <Text>
-                        How to make this
+                        Jawabannya: <strong>5.2%</strong>
                     </Text>
                 </ListItem>
             </List>
