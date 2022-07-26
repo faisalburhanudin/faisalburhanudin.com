@@ -1,14 +1,24 @@
-# Berapa rata-rate Inflasi Indonesia?
+import {Image} from "@chakra-ui/react";
 
-## Hasil
+# Berapa rata-rata inflasi di Indonesia
 
-Rata-rata inflasi di Indonesia dari tahun 2002 sampai Jun 2022 adalah **5.2**
+Inflasi rata-rata tahun 2002 sampai Juni 2022: 5.2
 
 
-## Dataset
+Saya selalu penasaran berapa sih sebenarnya rata-rata inflasi di Indonesia.
 
-Download dataset di [bi.go.id](https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx)
+Coba saya cari di google tetapi tidak memuaskan.
 
-## Analisis
+<Image px={20} src="/google-search-rata-rata-inflasi.png" mb={5} />
 
-Analisis lengkap, bisa dilihat di notebook [ini](https://github.com/faisalburhanudin/rata-rata-inflasi-indonesia)
+Tapi saya lihat di search result saya melihat ada raw data dari [BI](https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx)
+
+Setelah saya liat terdapat data dari 2003 sampai 2022, karena datanya tidak begitu mudah untuk diproses (tahun dan percent nya berbentuk string), perlu dilakukan preprocessing data.
+
+Selengkapnya bisa dilihat di [github](https://github.com/faisalburhanudin/rata-rata-inflasi-indonesia) saya.
+
+Dari hasil analysis bisa dilihat rata rata inflasi setiap tahun adalah 5.2
+
+Sedangkan inflasi untuk setiap tahunnya adalah sebagai berikut
+
+<Image px={20} src="/inflasi-tiap-tahun.png" />
