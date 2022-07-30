@@ -1,0 +1,73 @@
+# Berapa sih harga rumah di Yogyakarta?
+Selama 7 tahun saya tinggal di Yogyakarta saya selalu indekost atau mengontrak rumah. Sering berpindah-pindah tempat.
+
+Perjalanan kost dan kontrakan di Yogyakarta
+
+Kost pertama, sewa 300.000 perbulan, tapi tidak kurang nyaman dan cukup kotor, walaupun tidak bisa dibilang kumuh juga.
+
+Kost kedua, sewa 700.000 perbulan, harga 2.3x lebih mahal dari yang sebelumnya, tetapi ada dapur sendiri dan kamar mandi dalam.
+
+Kost ketiga, sewa 700.000 perbulan, dari pada kost sebelumnya, yang ini tanpa dapur, tapi akses jalannya jauh lebih enak dan paling dekat dengan kantor
+
+Kost keempat, sewa 500.000 perbulan, downgrade memang, kamar mandi sekarang diluar, tapi cuma sharing dengan 2 orang, kamar juga jauh lebih kecil, tapi bersih sekali kost ini, karena 1 rumah ibu kostnya mungkin ya.
+
+Kost Kelima, sewa 900.000 perbulan, ini hanya pindah kamar saja, masih di kost yang sebelumnya, kamar mandi masih di luar, tapi cuma sebelahan jadi malah jadi keunggulan, ndak bau kamar mandi, tapi akses sangat dekat, dan ada AC nya, dapat dipan, lemari. Walupun ini paling mahal tapi menurut saya sangat murah dengan fasilitas dan luar kamar yang besar
+
+Setelah menikah akhirnya kontrak 1 rumah yang sewanya 17.000.000 per tahun atau sekitar 1.400.000 perbulan, rumah tergolong baru berdiri, fasilitas hanya rumah kosong, ya namanya juga kontrakan, tapi desain rumahnya bagus sih.
+
+## Jadi berapa harganya.
+liat jupyter notebook selengkapnya [disini](https://github.com/faisalburhanudin/harga-rumah-yogyakarta/blob/main/analyze.ipynb)
+
+### Collect the data.
+Data nya saya ambil dari website olx, code untuk scraping bisa di lihat [disini](https://github.com/faisalburhanudin/harga-rumah-yogyakarta/blob/main/download-from-olx.ipynb)
+
+### Berapa banyak rumah yang di jual tiap provinsi?
+```
+- Sleman Kab.         268
+- Yogyakarta Kota     109
+- Bantul Kab.         106
+- Kulon Progo Kab.      4
+```
+
+### Rumah paling mahal
+lebih tepatnya bukan rumah mungkin ya, property paling mahal
+
+[link iklan](https://www.olx.co.id/item/869003592)
+
+```
+url                          https://www.olx.co.id/item/869003592
+price                                                 28000000000
+title                         Dijual Rumah+Ruang Usaha Yogyakarta
+district                                          Yogyakarta Kota
+sub_district                                          Mantrijeron
+sqr_building                                                 1000
+sqr_land                                                     1069
+bedroom                                                         6
+```
+
+### Rumah paling murah
+
+```
+url                          https://www.olx.co.id/item/868977609
+price                                                   229600000
+title               Rumah Modern Air Jernih Dekat Raminten Resort
+district                                         Kulon Progo Kab.
+sub_district                                            Nanggulan
+sqr_building                                                   40
+sqr_land                                                      122
+bedroom                                                         2
+```
+
+wuh masih ada ternyata rumah 200 jutaan di yogyakarta, tapi rumahnya blm ada.
+Hopefully bukan scam ya...
+
+### Rata-rata harga rumah keluarga kecil "Ideal" menurut saya
+spesifikasi:
+- kamar 3
+- maksimal tanah 150 meter persegi
+- minimal tanah 70 meter persegi
+
+```
+mean: 672,450,000
+median: 630,000,000
+```
