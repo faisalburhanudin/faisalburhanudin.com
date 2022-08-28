@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import {AppProps} from "next/app";
-import {ChakraProvider, Container, HStack} from "@chakra-ui/react";
+import {Box, ChakraProvider, Container, HStack} from "@chakra-ui/react";
 import {MDXProvider} from "@mdx-js/react";
 import {MDXComponents} from '../components/mdx';
 import {Link} from '../components/link';
@@ -16,6 +16,7 @@ function MyApp({Component, pageProps}: AppProps) {
                         <Link href="/post" name="Blog"/>
                     </HStack>
                     <Component {...pageProps} />
+                    <Box mt={10}></Box>
                 </Container>
             </MDXProvider>
         </ChakraProvider>
