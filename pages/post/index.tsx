@@ -12,6 +12,17 @@ interface Post {
 const PostIndex: NextPage = () => {
     let posts: Post[] = [
         {
+            href: "/post/does-investing-in-gold-make-us-rich",
+            name: "Does investing in gold make us rich?",
+            shortDescription: <Text>
+                Yes, but just slightly<br/>
+
+                with average inflation at <strong>8.32%</strong> and average return in gold at <strong>10.4%</strong>.
+
+                that makes our real return to be <strong>2.08%</strong>
+            </Text>
+        },
+        {
             href: "/post/harga-rumah-di-yogyakarta",
             name: "Berapa sih harga rumah di yogyakarta?",
             shortDescription: <Text>
@@ -30,7 +41,7 @@ const PostIndex: NextPage = () => {
             shortDescription: <Text>
                 Jawabannya: <strong>5.2%</strong>
             </Text>
-        }
+        },
     ]
 
 
@@ -45,8 +56,8 @@ const PostIndex: NextPage = () => {
                                 <Link href={post.href} name={post.name}/>
                             </Heading>
                             {post.shortDescription}
-                            <Text as={"u"}>
-                                <Link href={post.href} name="read ..."/>
+                            <Text as={"u"} color={"gray.500"}>
+                                <Link href={post.href} name="read more"/>
                             </Text>
                         </ListItem>
                     )
