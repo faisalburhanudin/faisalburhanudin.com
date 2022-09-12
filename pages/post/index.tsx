@@ -1,6 +1,7 @@
 import {NextPage} from "next";
 import {Heading, List, ListItem, Text} from "@chakra-ui/react";
 import {Link} from '../../components/link';
+import Head from "next/head";
 
 
 interface Post {
@@ -47,7 +48,10 @@ const PostIndex: NextPage = () => {
 
     return (
         <>
-            <Heading as="h1" mb={5}>Posts</Heading>
+            <Head>
+                <title>Post</title>
+            </Head>
+
             <List spacing={8}>
                 {posts.map(
                     post => (
