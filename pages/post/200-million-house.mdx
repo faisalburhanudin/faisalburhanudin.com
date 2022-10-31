@@ -1,0 +1,78 @@
+import Head from "next/head"; import {ImagePost} from "../../components/image";
+
+<Head>
+    <title>200 million and want a house</title>
+</Head>
+
+Let’s say I have IDR 200 million, It’s a good idea to use it as a down payment?
+
+## House Price
+in Yogyakarta, you can have a decent home with a price of around 700.000.000
+
+<ImagePost src="/200-million-house/olx.png"/>
+
+## Calculate Mortgage
+I will use the BTN rate for this calculation
+
+<ImagePost src="/200-million-house/btn.png"/>
+
+- **200.000.000** as a down payment
+- Tenor mortgage for **8 years**
+- **6.75%** fixed interest for 2 year
+- **13%** floating interest for 6 years
+
+Using the simulasi_kpr feature from BTN Properti I got
+
+- 2-year monthly installment: **5.864.026**
+- 6-year monthly installment: **7.495.300**
+
+If we calculate monthly installment using averagely weighted we got
+
+- **7.291.391** monthly installment
+
+# Alternative: Use 200.000.000 as an investment
+
+## Future investment of 200.000.000
+
+If I use 200.000.000 to invest with a yearly investment return of **15%,** I got **611,804,573**
+
+## **Future Home Price**
+
+With assumption, the housing inflation rate at **6%**, in **8 years** (same with mortgage tenor). using the future value formula, the house price become **1,115,693,652**
+
+## Monthly Save
+
+- Future House Price: **1,115,693,652**
+- Future Investment: **611,804,573**
+- Need to save: **503,889,080**
+Using the PMT formula with parameter
+
+- 15% yearly investment return
+- 8 years period
+We got **3,059,030** targets monthly to save
+
+## Rent Price
+
+I need to live somewhere right?
+
+so if I go without a mortgage, I need to rent someplace, currently my monthly rent at **2.000.000**, with the assumption monthly rate increase by **30%** after 4 years, we got monthly rent at **2.600.000**
+
+so the average monthly rate in 8 years is **2.300.000**
+
+## Monthly Payment
+
+if we add monthly save and rent price we got **5,359,030**
+
+# Conclusion
+
+With assumption
+
+- House inflation: 6%
+- Return on investment: 15%
+- Mortgage fix 6.75% (2 Year)
+- Mortgage floating 13% (6 Year)
+
+We got monthly expenses:
+
+- mortgage: **7.291.391**
+- investment: **5,359,030**

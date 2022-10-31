@@ -5,7 +5,7 @@ export const MDXComponents: any = {
     h2: (p: any) => <Heading as="h2" my={5} size={"md"} {...p}/>,
     h3: (p: any) => <Heading as="h2" my={5} size={"sm"} {...p}/>,
     ul: (p: any) => <UnorderedList {...p}/>,
-    li: (p: any) => <ListItem {...p}/>,
+    li: (p: any) => <ListItem mb={5} {...p}/>,
     p: (p: any) => <Text mb={5} {...p}/>,
     a: (p: any) => <Link color='teal.500' {...p}/>,
 }

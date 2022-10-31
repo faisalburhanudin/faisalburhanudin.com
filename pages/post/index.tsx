@@ -13,6 +13,18 @@ interface Post {
 const PostIndex: NextPage = () => {
     let posts: Post[] = [
         {
+            href: "/post/200-million-house",
+            name: "IDR 200 million, It’s a good idea to use it as down payment?",
+            shortDescription: <Text>
+                Maybe not<br/>
+                I think it is better to do investing, and wait for 8 years and buy in cash. <br/>
+                <br/>
+                monthly expense<br/>
+                <strong>mortgage: 7.291.391</strong><br/>
+                <strong>investment: 5,359,030</strong>
+            </Text>
+        },
+        {
             href: "/post/does-investing-in-gold-make-us-rich",
             name: "Does investing in gold make us rich?",
             shortDescription: <Text>
