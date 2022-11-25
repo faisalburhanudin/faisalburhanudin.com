@@ -1,0 +1,32 @@
+import Head from "next/head"; import {ImagePost} from "../../components/image";
+
+<Head>
+    <title>How to fix Datagrip: [08S01] Communications link failure </title>
+</Head>
+
+# How to fix Datagrip: [08S01] Communications link failure
+
+## Problem
+
+<ImagePost src="/datagrip-08S01/problem.png"/>
+
+## Solution
+
+create this file in your home directory with the filename custom.java.security
+
+```
+jdk.tls.disabledAlgorithms=SSLv3, RC4, DES, MD5withRSA, \
+    DH keySize < 1024, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, \
+    include jdk.disabled.namedCurves
+```
+
+<br/>
+in your connection configuration, open tab Advanced
+
+<ImagePost src="/datagrip-08S01/advance-tab.png"/>
+
+paste this code in `VM options`, and adjust your path according to yours
+
+```
+Djava.security.properties=/Users/faisal/custom.java.security
+```

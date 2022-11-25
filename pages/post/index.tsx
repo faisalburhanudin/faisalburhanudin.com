@@ -13,9 +13,16 @@ interface Post {
 const PostIndex: NextPage = () => {
     let posts: Post[] = [
         {
+            href: "/post/datagrip-08S01-communications-link-failure",
+            name: "How to fix Datagrip: [08S01] Communications link failure ",
+            shortDescription: <Text></Text>
+        },
+        {
             href: "/post/coffee-shop-at-jogja",
             name: "Coffee shop at Yogyakarta",
-            shortDescription: <Text>There are so many coffee shops in Yogyakarta, choosing one is become an analysis paralysis task, with this data hopefully reduce the total number of the coffee shop I need to choose</Text>
+            shortDescription: <Text>There are so many coffee shops in Yogyakarta, choosing one is become an analysis
+                paralysis task, with this data hopefully reduce the total number of the coffee shop I need to
+                choose</Text>
         },
         {
             href: "/post/200-million-house",
